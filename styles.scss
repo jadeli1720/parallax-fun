@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-$dark-purple: #2b1055;
+$blue-purple: #2b1055;
+$grape: #1c0522;
 $lilac: #7597de;
 
 @mixin center {
@@ -14,11 +15,13 @@ $lilac: #7597de;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient($dark-purple, $lilac);
+    background: linear-gradient($blue-purple, $lilac);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -30,7 +33,7 @@ header {
     left: 0;
     padding: 30px 100px;
     width: 100%;
-    z-index: 100;
+    z-index: 10000;
 
     .logo {
         color: white;
@@ -57,14 +60,14 @@ header ul {
 
             &:hover {
                 background: white;
-                color: $dark-purple;
+                color: $blue-purple;
             }
 
         }
 
         .active {
             background: white;
-            color: $dark-purple;
+            color: $blue-purple;
         }
     }
 }
@@ -75,6 +78,17 @@ header ul {
     padding: 100px;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to top, $grape, transparent);
+        height: 100px;
+        width: 100%;
+        z-index: 100;
+    }
     
     img {
         position: absolute;
@@ -97,9 +111,9 @@ header ul {
 
     #title {
         position: absolute;
+        right: -350px;
         color:white;
         white-space: nowrap;
-        //on larger screens this doesn't work: 7.5vw
         font-size: 7.5vw;
         z-index: 9;
         
@@ -109,7 +123,7 @@ header ul {
         display: inline-block;
         background: white;
         border-radius: 40px;
-        color: $dark-purple;
+        color: $blue-purple;
         font-size: 1.5rem;
         padding: 8px 30px;
         text-decoration: none;
@@ -119,5 +133,20 @@ header ul {
 }
 
 #text-container {
-    
+    position: relative;
+    background: $grape;
+    padding: 100px;
+
+    h2 , p {
+        color:white
+    }
+
+    h2 {
+        font-size:3.5rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
 }
