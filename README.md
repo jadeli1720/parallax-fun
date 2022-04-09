@@ -1,6 +1,6 @@
 # Parallax-fun
 
-The projects sole purpose is to learn how to add parallax functionality with HTML, CSS, &amp; JavaScript
+The projects sole purpose is to learn how to add parallax functionality with HTML, CSS, &amp; vanilla JavaScript
 
 Parallax-fun is based off of a tutorial provided by the YouTube channel [Online Tutorials](https://www.youtube.com/c/OnlineTutorials4Designers/videos/). However, I hope to test out various ways of achieving the same result, add new features using  vanilla JS, and create a fully functional/flushed-out web page in future iterations.
 
