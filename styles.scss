@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+$blue-purple: #2b1055;
+$grape: #1c0522;
+$lilac: #7597de;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient($blue-purple, $lilac);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+    width: 100%;
+    z-index: 10000;
+
+    .logo {
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+        list-style-type: none;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+header ul {
+    @include center;
+    li {
+        margin-left: 20px;
+        list-style-type: none;
+
+        a {
+            border-radius: 20px;
+            color: white;
+            padding: 6px 15px;
+            text-decoration: none;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                background: white;
+                color: $blue-purple;
+            }
+
+        }
+
+        .active {
+            background: white;
+            color: $blue-purple;
+        }
+    }
+}
+
+#img-container {
+    @include center;
+    position: relative;
+    padding: 100px;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        //adjust the gradient so we see more of the image
+        background: linear-gradient(to top, $grape, transparent);
+        height: 100px;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+        //this helps clear the pointer for other objects that are on the same z-index level like the button
+        pointer-events: none;
+    }
+
+    #moon {
+        mix-blend-mode: screen;
+    }
+
+    #mountains-front {
+        z-index: 10;
+    }
+
+    #title {
+        position: absolute;
+        right: -350px;
+        color:white;
+        white-space: nowrap;
+        font-size: 7.5vw;
+        z-index: 9;
+        
+    }
+
+    #btn {
+        display: inline-block;
+        background: white;
+        border-radius: 40px;
+        color: $blue-purple;
+        font-size: 1.5rem;
+        padding: 8px 30px;
+        text-decoration: none;
+        z-index: 9;
+        transform: translateY(100px);
+    }
+}
+
+#text-container {
+    position: relative;
+    background: $grape;
+    padding: 100px;
+
+    h2 , p {
+        color:white
+    }
+
+    h2 {
+        font-size:3.5rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
