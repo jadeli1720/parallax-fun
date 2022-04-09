@@ -84,6 +84,7 @@ header ul {
         content: '';
         position: absolute;
         bottom: 0;
+        //adjust the gradient so we see more of the image
         background: linear-gradient(to top, $grape, transparent);
         height: 100px;
         width: 100%;
