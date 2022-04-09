@@ -1,6 +1,8 @@
 # Parallax-fun
 
-This project sole purpose is to learn how to add parallax functionality with HTML, CSS, &amp; JavaScript
+The projects sole purpose is to learn how to add parallax functionality with HTML, CSS, &amp; JavaScript
+
+Parallax-fun is based off of a tutorial provided by the YouTube channel [Online Tutorials](https://www.youtube.com/c/OnlineTutorials4Designers/videos/). However, I hope to test out various ways of achieving the same result, add new features using  vanilla JS, and create a fully functional/flushed-out web page in future iterations.
 
 ![Project screen shot](/img/screenshot.png)
 
@@ -15,7 +17,7 @@ This project sole purpose is to learn how to add parallax functionality with HTM
 
 - [ ] Add responsive styling to the homepage
 - [ ] Adjust the 'Moon Light' title on all screen sizes
-- [ ] Add other pages to practice parallax functionality
+- [ ] Add other pages to practice parallax functionality and/or add other features using only vanilla JS
 - [ ] Add other animations and hover states to the 'Explore' button and/or logo
 - [ ] Add an actual theme to this site and corresponding logo
 - [ ] Add other features to the overall site
