@@ -26,4 +26,4 @@ Parallax-fun is based off of a tutorial provided by the YouTube channel [Online 
 
 ![Header image](/img/starry_night.jpg)
 
-The image for this project was sourced from [freepik.com](https://www.freepik.com/), and was created by [upklyak](https://www.freepik.com/vectors/cliff)
+The image(s) for this project was sourced from [freepik.com](https://www.freepik.com/), and was created by [upklyak](https://www.freepik.com/vectors/cliff)
